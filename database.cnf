@@ -1,7 +1,7 @@
 [client]
 HOST = localhost
 PORT = 3306
-USER = 
-PASSWORD = 
-DATABASE = 
+USER = root
+PASSWORD = idiot
+DATABASE = alumni
 DEFAULT-CHARACTER-SET = utf8
