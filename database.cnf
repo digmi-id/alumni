@@ -1,0 +1,7 @@
+[client]
+HOST = localhost
+PORT = 3306
+USER = 
+PASSWORD = 
+DATABASE = 
+DEFAULT-CHARACTER-SET = utf8
