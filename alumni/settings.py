@@ -25,7 +25,7 @@ SECRET_KEY = 'czmpry#^z0l2ppf6653nl!_ok!$dn@1a392o&5&r9z(o3n0hr+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'testserver']
 
 
 # Application definition
@@ -75,8 +75,11 @@ WSGI_APPLICATION = 'alumni.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file': os.path.join(BASE_DIR, 'database.cnf'),
+            'init_command': 'SET storage_engine=INNODB',
+        },
     }
 }
 
