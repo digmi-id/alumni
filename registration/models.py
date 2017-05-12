@@ -19,7 +19,6 @@ class Company(models.Model):
     description = models.TextField()
     address = models.CharField(max_length=255)
 
-
 @python_2_unicode_compatible
 class Admin(models.Model):
     name = models.CharField(max_length=50)
