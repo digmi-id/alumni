@@ -10,7 +10,7 @@
   <meta name="keywords" content="smk, indramayu, alumni, ikatan alumni, job, loker, digmi">
   <meta name="author" content="www.digmi.id">
 
-  <title>{% block title %} Alumni SMKN 1 Cikedung {% endblock title %}</title>
+  <title>{% block title %} Alumni SMK Negeri 1 Cikedung {% endblock title %}</title>
 
   <link rel="shortcut icon" href="{% static "img/ico/favicon.png" %}">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static "img/ico/apple-touch-icon-144-precomposed.png" %}">
@@ -73,14 +73,16 @@
             <img src="{% static "img/logo.png" %}" alt="" />
           </a>
           <ul class="menuzord-menu pull-right">
-            <li><a href="{% url 'website:index' %}">Home</a></li>
-            <li><a href="javascript:void(0)">Registrasi</a>
+            <li><a href="{% url 'website:index' %}">Beranda</a></li>
+            <li><a href="{% url 'job:index' %}">Lowongan Kerja</a></li>
+            <li><a href="{% url 'reunion:index' %}">Reuni</a></li>
+            <li><a href="#">Registrasi</a>
               <ul class="dropdown">
-                <li><a href="{% url 'website:login' %}">Alumni</a></li>
-                <li><a href="{% url 'website:login' %}">Perusahaan</a></li>
+                <li><a href="{% url 'user:login' %}">Alumni</a></li>
+                <li><a href="{% url 'user:login' %}">Perusahaan</a></li>
               </ul>
             </li>
-            <li><a href="javascript:void(0)">Kontak</a></li>
+            <li><a href="{% url 'website:about' %}">Tentang Kami</a></li>
           </ul>
         </div>
       </div>
@@ -159,9 +161,10 @@
     <div class="secondary-footer brand-bg darken-2 text-center">
       <div class="container">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Tentang Kami</a></li>
-          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="{% url 'website:index' %}">Beranda</a></li>
+          <li><a href="{% url 'website:about' %}">Tentang Kami</a></li>
+          <li><a href="{% url 'website:contact' %}">Kontak Kami</a></li>
+          <li><a href="{% url 'website:faq' %}">FAQ</a></li>
         </ul>
       </div>
     </div>

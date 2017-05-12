@@ -1,0 +1,326 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} [Judul Reuni] - AlumniNesaci {% endblock title %}
+{% block headertype %} nav-border-bottom {% endblock headertype %}
+
+{% block content %}
+<section class="page-title ptb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Reuni Akbar</h2>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Reuni Akbar</a></li>
+                    <li class="active">[Judul Reuni]</li>
+                    <li><a href="#">2017</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog-section section-padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+            <div class="posts-content single-post">
+              <article class="post-wrapper">
+                <header class="entry-header-wrapper clearfix">
+                  <div class="author-thumb waves-effect waves-light">
+                    <a href="#"><img src="{% static "img/blog/author.jpg" %}" alt=""></a>                
+                  </div>
+                  <div class="entry-header">
+                    <h2 class="entry-title">CTC to showcase technology solutions at Sea Air Space Exposition</h2>
+                    <div class="entry-meta">
+                        <ul class="list-inline">
+                            <li>
+                                <i class="fa fa-user"></i><a href="#">Trendy Theme</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o"></i><a href="#">Jan 15, 2016</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-heart-o"></i><a href="#"><span>1</span></a>
+                            </li>
+                            <li>
+                                <i class="fa fa-comment-o"></i><a href="#">3</a>
+                            </li>
+                        </ul>
+                    </div><!-- .entry-meta -->
+                  </div>
+                </header><!-- /.entry-header-wrapper -->
+
+                <div class="thumb-wrapper">
+                  <img src="{% static "img/blog/blog-1.jpg" %}" class="img-responsive" alt="" >
+                </div><!-- .post-thumb -->
+
+                <div class="entry-content">
+                  <p>Maecenas varius finibus orci vel dignissim. Nam posuere, magna pellentesque accumsan tincidunt, libero lorem convallis lectus, tincidunt accumsan enim ex ut sem. Ut in augue congue, tempus urna sit amet, condimentum lorem. Pellentesque est sem, semper sit amet velit et, commodo fringilla turpis. Aenean quam erat, eleifend quis congue vitae, interdum vitae risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed viverra nulla.</p>
+                  <p>Maecenas congue risus enim, a bibendum erat sodales non. Aliquam sodales nunc id nisi scelerisque, eu semper neque condimentum. Suspendisse at purus eget velit volutpat consequat. Sed sodales, enim a pretium euismod, dui nunc venenatis enim, a hendrerit diam mauris sed ligula. Integer malesuada velit velit, et rhoncus velit finibus eu. Nam faucibus nulla lectus, eu laoreet mi rhoncus sed. Suspendisse iaculis mollis faucibus. Phasellus nisi ex, lacinia ac velit eget, congue ultrices ante. Vestibulum a ex dui. Etiam eget ex sodales, semper urna et, faucibus nisi. Etiam vehicula, elit in efficitur pretium, quam quam pellentesque tellus, vel laoreet erat leo id tortor. Morbi lobortis erat non ipsum hendrerit, non venenatis erat tempus. Nunc laoreet malesuada dolor, nec iaculis mi suscipit hendrerit. Aliquam arcu magna.</p>
+                </div><!-- .entry-content -->
+
+                <footer class="entry-footer">
+                  <div class="post-tags">
+                    <span class="tags-links">
+                      <i class="fa fa-tags"></i><a href="#">Technology,</a> <a href="#" rel="tag">material design</a>
+                    </span>
+                  </div> <!-- .post-tags -->
+                  <ul class="list-inline right share-post">
+                      <li><a href="#"><i class="fa fa-facebook"></i> <span>Share</span></a>
+                      </li>
+                      <li><a href="#"><i class="fa fa-twitter"></i> <span>Tweet</span></a>
+                      </li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i> <span>Plus</span></a>
+                      </li>
+                  </ul>
+                </footer>
+              </article><!-- /.post-wrapper -->
+
+              <nav class="single-post-navigation" role="navigation">
+                <div class="row">
+                  <!-- Previous Post -->
+                  <div class="col-xs-6">
+                    <div class="previous-post-link">
+                      <a class="waves-effect waves-light" href="#"><i class="fa fa-long-arrow-left"></i>Read Previous Post</a>
+                    </div>
+                  </div>
+
+                  <!-- Next Post -->
+                  <div class="col-xs-6">
+                    <div class="next-post-link">
+                      <a class="waves-effect waves-light" href="#">Read Next Post<i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div> <!-- .row -->
+              </nav>
+            </div><!-- /.posts-content -->
+          </div><!-- /.col-md-8 -->
+
+          <div class="col-md-4">
+            <div class="tt-sidebar-wrapper" role="complementary">
+                <div class="widget widget_search">
+                  <form role="search" method="get" class="search-form" >
+                    <input type="text" class="form-control" value="" name="s" id="s" placeholder="Write any keywords">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div><!-- /.widget_search -->
+
+                <div class="widget widget_tt_author_widget">
+                  <div class="author-info-wrapper">
+                      <div class="author-cover">
+                          <img src="{% static "img/blog/author-large-thumb.jpg" %}"  alt="">
+                      </div>
+                      <div class="author-avatar">
+                          <img src="{% static "img/blog/author-2.jpg" %}"  alt="">
+                          <h2>John Doe</h2>
+                          <span>User Interface Designer</span>
+                      </div>
+                      <p>All these men were men of conviction. They deeply believed in what they were doing and put their reputations.</p>
+                      <div class="author-social-links">
+                          <ul class="list-inline">
+                              <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                              <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                              <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>            
+                          </ul>
+                      </div>
+                  </div> <!-- /author-info-wrapper -->
+                </div><!-- /.widget_tt_author_widget -->
+
+
+                <div  class="widget widget_tt_popular_post">
+                  <div class="tt-popular-post border-bottom-tab">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs">
+                          <li class="active">
+                              <a href="#tt-popular-post-tab1" data-toggle="tab" aria-expanded="true">Latest</a>
+                          </li>
+                          <li class="">
+                              <a href="#tt-popular-post-tab2" data-toggle="tab" aria-expanded="false">Popular</a>
+                          </li>
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                          <!-- latest post tab -->
+                          <div id="tt-popular-post-tab1" class="tab-pane fade active in">
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-3.jpg" %}" alt="">
+                              </a>
+                              <div class="media-body">
+                                <h4><a href="#">At the end of the day, or at the start of the day?</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-4.jpg" %}" alt="">
+                              </a>
+                              <div class="media-body">
+                                <h4><a href="#">What never to tweet about</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-5.jpg" %}" alt="">
+                              </a>
+                              <div class="media-body">
+                                <h4><a href="#">Men have become the tools of their tools.</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+                            
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-1.jpg" %}" alt="">
+                              </a>
+                              <div class="media-body">
+                                <h4><a href="#">Master the psychology of web design</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-2.jpg" %}" alt="">
+                              </a>
+
+                              <div class="media-body">
+                                <h4><a href="#">CTC to showcase technology solutions at Sea A......</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+
+                          </div>
+
+                          <!-- popular post tab-->
+                          <div id="tt-popular-post-tab2" class="tab-pane fade">
+
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-1.jpg" %}" alt="">
+                              </a>
+
+                              <div class="media-body">
+                                <h4><a href="#">Master the psychology of web design</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-2.jpg" %}" alt="">
+                              </a>
+
+                              <div class="media-body">
+                                <h4><a href="#">CTC to showcase technology solutions at Sea A......</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-3.jpg" %}" alt="">
+                              </a>
+
+                              <div class="media-body">
+                                <h4><a href="#">At the end of the day, or at the start of the day?</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-4.jpg" %}" alt="">
+                              </a>
+
+                              <div class="media-body">
+                                <h4><a href="#">What never to tweet about</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img src="{% static "img/blog/recent-thumb-5.jpg" %}" alt="">
+                              </a>
+                              <div class="media-body">
+                                <h4><a href="#">Men have become the tools of their tools.</a></h4>
+                              </div> <!-- /.media-body -->
+                            </div> <!-- /.media -->
+                          </div>
+                      </div><!-- /.tab-content -->
+                  </div><!-- /.tt-popular-post -->
+                </div><!-- /.widget_tt_popular_post -->
+                <div class="widget widget_categories">
+                  <h3 class="widget-title">Categories</h3>   
+                  <ul>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Material</a></li>
+                  </ul>
+                </div><!-- /.widget_categories -->
+                <div class="widget widget_tt_twitter">
+                  <i class="fa fa-twitter"></i>
+                  <div id="twitter-gallery-feed">
+                    <div class="twitter-widget"></div> <!-- this div is required for carousel injected by javascript -->
+                    <!-- html code injected via javascript -->
+                  </div>
+                </div><!-- /.widget_tt_twitter -->
+                <div class="widget widget_tt_instafeed">
+                  <i class="fa fa-instagram"></i>
+                  <h3 class="widget-title">Instagram Photos</h3>
+                    <div id="myinstafeed">
+                      <!-- html code injected via javascript -->
+                    </div> 
+                </div><!-- /.widget_tt_instafeed -->
+            </div><!-- /.tt-sidebar-wrapper -->
+          </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+  </div><!-- /.container -->
+</section>
+{% endblock content %}
+
+{% block script %}
+<script>
+  if ($('#twitter-gallery-feed').length > 0) {
+      
+      var twitterWidgetConfig = {
+          id: "613424231099953152", //put your Widget ID here
+          domId: "twitter-gallery-feed",
+          maxTweets: 3,
+          enableLinks: true,
+          showUser: false,
+          showTime: false,
+          showInteraction: false,
+          customCallback: handleTweets
+      };
+
+      twitterFetcher.fetch(twitterWidgetConfig);
+
+      function handleTweets(tweets) {
+          var x = tweets.length;
+          var n = 0;
+          var html = "";
+          while (n < x) {
+              html += '<div class="item">' + tweets[n] +
+                  "</div>";
+              n++
+          }
+
+          $(".twitter-widget").html(html);
+          $(".twitter_retweet_icon").html(
+              '<i class="fa fa-retweet"></i>');
+          $(".twitter_reply_icon").html(
+              '<i class="fa fa-reply"></i>');
+          $(".twitter_fav_icon").html(
+              '<i class="fa fa-star"></i>');
+          $(".twitter-widget").owlCarousel({
+              items: 1,
+              loop: true,
+              autoplay: true,
+              autoHeight: true
+          });
+      }
+
+  }
+</script>
+{% endblock script %}

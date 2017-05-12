@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} [Nama]- AlumniNesaci {% endblock title %}
+{% block headertype %} nav-border-bottom {% endblock headertype %}
+
+{% block content %}
+<section class="page-title ptb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Kontak Kami</h2>
+                <ol class="breadcrumb">
+                    <li><a href="#">Beranda</a></li>
+                    <li class="active">Kontak kami</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+      <div class="text-center mb-80">
+          <h2 class="section-title text-uppercase">Hubungi Kami</h2>
+          <p class="section-sub">Quisque non erat mi. Etiam congue et augue sed tempus. Aenean sed ipsum luctus, scelerisque ipsum nec, iaculis justo. Sed at vestibulum purus, sit amet viverra diam nulla ac nisi rhoncus.</p>
+      </div>
+    <div class="row">
+        <div class="col-md-8">
+            <form name="contact-form" id="contactForm" action="" method="POST">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-field">
+                    <input type="text" name="name" class="validate" id="name">
+                    <label for="name">Nama Lengkap</label>
+                  </div>
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <div class="input-field">
+                    <label class="sr-only" for="email">Email</label>
+                    <input id="email" type="email" name="email" class="validate" >
+                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                  </div>
+                </div><!-- /.col-md-6 -->
+              </div><!-- /.row -->
+              <div class="input-field">
+                <textarea name="message" id="message" class="materialize-textarea" ></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button type="submit" name="submit" class="waves-effect waves-light btn submit-button blue mt-30">Kirim</button>
+            </form>
+        </div><!-- /.col-md-8 -->
+
+        <div class="col-md-4 contact-info">
+            <address>
+              <i class="material-icons brand-color">&#xE55F;</i>
+              <div class="address">
+                Jl. Cikedung Nomor 1234<br>
+                Cikedung Kidul
+                <hr>
+                <p>Cikedung, Indramayu 45262.<br>
+                Indonesia.</p>
+              </div>
+              <i class="material-icons brand-color">&#xE61C;</i>
+              <div class="phone">
+                <p>Fax: (123) 456-7890<br>
+                Telepon: (123) 456-7890</p>
+              </div>
+              <i class="material-icons brand-color">&#xE0E1;</i>
+              <div class="mail">
+                <p><a href="mailto:#">info@alumni-nesaci.org</a><br>
+                <a href="#">www.alumni-nesaci.org</a></p>
+              </div>
+            </address>
+        </div><!-- /.col-md-4 -->
+    </div><!-- /.row -->
+  </div>
+</section>
+
+<div id="myMap" class="height-350"></div>
+{% endblock content %}
+
+{% block javascript %}
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+{% endblock javascript %}
+
+{% block script %}
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        var $latitude = -6.497080,
+            $longitude = 108.187434,
+            $map_zoom = 16
+        var $marker_url = '{% static "img/pin.png" %}';
+        var style = [{
+            "stylers": [{
+                "hue": "#03a9f4"
+            }, {
+                "saturation": 10
+            }, {
+                "gamma": 2.15
+            }, {
+                "lightness": 12
+            }]
+        }];
+        var map_options = {
+            center: new google.maps.LatLng($latitude, $longitude),
+            zoom: $map_zoom,
+            panControl: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            streetViewControl: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false,
+            styles: style
+        }
+        var map = new google.maps.Map(document.getElementById('myMap'), map_options);
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng($latitude, $longitude),
+            map: map,
+            visible: true,
+            icon: $marker_url
+        });
+        var contentString = '<div id="mapcontent">' + '<p>SMK Negeri 1 Cikedung, Indrmaayu, Jawa Barat</p></div>';
+        var infowindow = new google.maps.InfoWindow({
+            maxWidth: 320,
+            content: contentString
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+    });
+</script>
+{% endblock script %}

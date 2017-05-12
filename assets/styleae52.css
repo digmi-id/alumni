@@ -38,7 +38,7 @@
 
 
 /* Import css files */
-@import url("assets/fonts/flaticon/flaticon.css");
+@import url("/static/fonts/flaticon/flaticon.css");
 
 /* Google Web Fonts */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900);
