@@ -3,7 +3,7 @@ from django.utils.encoding import python_2_unicode_compatible
 
 @python_2_unicode_compatible
 class Alumni(models.Model):
-    KULIAH = "KULIAHL"
+    KULIAH = "KULIAH"
     KERJA = "KERJA"
     STATUS = (
         (KULIAH, "KULIAH"),
